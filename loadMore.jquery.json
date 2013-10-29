@@ -1,33 +1,33 @@
 {
-    "name": "loadMore",
-    "title": "jQuery - load more",
-    "description": "Load data and render elements.",
-    "keywords": [
-        "ajax"
-    ],
-    "version": "0.0.0",
-    "author": {
-        "name": "Fujisawa Shin",
-        "url": "http://blog.fnobi.com/"
-    },
-    "maintainers": [
-        {
-            "name": "Fujisawa Shin",
-            "email": "shin@fnobi.com",
-            "url": "http://blog.fnobi.com/"
-        }
-    ],
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "https://github.com/fnobi/jquery.loadMore"
-        }
-    ],
-    "bugs": "https://github.com/fnobi/jquery.loadMore/issues",
-    "homepage": "https://github.com/fnobi/jquery.loadMore",
-    "docs": "https://github.com/fnobi/jquery.loadMore",
-    "download": "https://github.com/fnobi/jquery.loadMore",
-    "dependencies": {
-        "jquery": ">=1.9"
+  "name": "loadMore",
+  "title": "jQuery - load more",
+  "description": "Load data and render elements.",
+  "keywords": [
+    "ajax"
+  ],
+  "version": "0.0.1",
+  "author": {
+    "name": "Fujisawa Shin",
+    "url": "http://blog.fnobi.com/"
+  },
+  "maintainers": [
+    {
+      "name": "Fujisawa Shin",
+      "email": "shin@fnobi.com",
+      "url": "http://blog.fnobi.com/"
     }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/fnobi/jquery.loadMore"
+    }
+  ],
+  "bugs": "https://github.com/fnobi/jquery.loadMore/issues",
+  "homepage": "https://github.com/fnobi/jquery.loadMore",
+  "docs": "https://github.com/fnobi/jquery.loadMore",
+  "download": "https://github.com/fnobi/jquery.loadMore",
+  "dependencies": {
+    "jquery": ">=1.9"
+  }
 }
