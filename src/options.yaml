@@ -1,0 +1,51 @@
+name: loadMore
+
+url:
+  https://github.com/fnobi/jquery.loadmore
+
+repository:
+  git://github.com/fnobi/jquery.loadmore.git
+
+title:
+  loadMore
+
+description:
+  Load data and render elements.
+
+keywords: []
+
+favicon_url: ''
+
+viewport: 
+  - width=device-width
+  - initial-scale=1.0
+  - maximum-scale=1.0
+  - user-scalable=0
+
+ios_icon_url: ''
+
+facebook_app_id: ''
+
+ogp_type: 'website'
+
+ogp_image_url: ''
+ogp_image_width: 0
+ogp_image_height: 0
+
+
+sns:
+  twitter:
+    sharetext:
+      Load data and render elements.      
+    sharehashtag: []
+
+  facebook:
+    app_id: ''
+    sharetext:
+      Load data and render elements.
+
+ogp:
+  image: 
+    url: https://github.com/fnobi/jquery.loadmore/img/ogp-icon.png
+    width: 300
+    height: 300

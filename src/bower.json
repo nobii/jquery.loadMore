@@ -1,0 +1,10 @@
+{
+  "name": "loadMore",
+  "version": "0.0.0",
+  "main": "js/loadMore.js",
+  "devDependencies": {
+    "ejs-head-modules": "~1.0.5",
+    "ejs-sns-modules": "~0.4.1",
+    "html5shiv": "~3.6.2"
+  }
+}
