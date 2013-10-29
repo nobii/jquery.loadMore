@@ -1,2 +1,47 @@
+@import "compass";
 @import "compass/reset";
 
+#wrapper {
+    font-family: sans-serif;
+    color: #333333;
+}
+
+#list-article {
+    margin: 50px;
+}
+
+.block-article {
+    @include box-shadow(0px 3px 5px black);
+    @include border-radius(5px);
+
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: #eeeeee;
+
+    .block-article-title {
+        font-weight: bold;
+        font-size: 150%;
+    }
+
+    .block-article-meta {
+        border-top: solid 1px gray;
+        padding: 5px 0px;
+        margin-top: 5px;
+
+        li {
+            display: inline-block;
+            padding-right: 1em;
+        }
+    }
+
+    .txt-article-category {
+        font-weight: bold;
+        
+        &.category-news {
+            color: blue;
+        }
+        &.category-column {
+            color: green;
+        }
+    }
+}

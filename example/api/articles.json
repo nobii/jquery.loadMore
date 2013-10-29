@@ -1,0 +1,17 @@
+{
+  "status": "200",
+  "result": [
+    {
+      "title": "hoge",
+      "date": "2012/6/1",
+      "categoryLabel": "ニュース",
+      "category": "news"
+    },
+    {
+      "title": "moge",
+      "date": "2012/5/1",
+      "categoryLabel": "コラム",
+      "category": "column"
+    }
+  ]
+}
