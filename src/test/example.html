@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>example</title>
+<link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+</head>
+<body>
+
+<div id="mocha"></div>
+
+<!-- js src -->
+
+<!-- mocha and assert module -->
+<script src="../node_modules/chai/chai.js"></script>
+<script src="../node_modules/mocha/mocha.js"></script>
+<script>mocha.setup('bdd')</script>
+
+<!-- test codes -->
+<script src="basic-test.js"></script>
+
+<!-- run test -->
+<script>
+
+mocha.checkLeaks();
+
+window.onload = function () {
+  if (window.mochaPhantomJS) {
+    mochaPhantomJS.run();
+  } else {
+    mocha.run();
+  }
+};
+</script>
+
+</body>
+</html>

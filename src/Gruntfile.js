@@ -18,74 +18,13 @@ module.exports = function (grunt) {
 
         config.release = {
             options: {
-                file: 'bower.json',
+                file: '../loadMore.jquery.json',
                 npm: false
             }
         };
     }
 
     var configureEnv = function (name, env) {
-        // js
-        {
-            grunt.loadNpmTasks('grunt-auto-deps');
-            config.auto_deps = config.auto_deps || {};
-
-            if (env.demo) {
-                config.auto_deps[name] = {
-                    scripts: [
-                        'loadMore'
-                    ],
-                    dest: path.resolve(env.sitePath, 'js'),
-                    loadPath: ['js/*.js'],
-                    ignore: [],
-                    forced: [],
-                    locate: namespaces
-                };
-                config.auto_deps[name + '-demo'] = {
-                    scripts: [
-                        'loadMore-demo'
-                    ],
-                    dest: path.resolve(env.sitePath, 'js'),
-                    loadPath: ['js/*.js'],
-                    ignore: ['loadMore'],
-                    forced: ['html5shiv'],
-                    locate: namespaces
-                };
-
-                if (env.watch) {
-                    config.watch.js = {
-                        files: ['js/*.js'],
-                        tasks: [
-                            'auto_deps:' + name,
-                            'auto_deps:' + name + '-demo'
-                        ]
-                    };
-                }    
-                env.tasks.push('auto_deps:' + name);
-                env.tasks.push('auto_deps:' + name + '-demo');
-            } else {
-                config.auto_deps[name] = {
-                    scripts: [
-                        'loadMore'
-                    ],
-                    dest: path.resolve(env.sitePath, 'js'),
-                    loadPath: ['js/*.js'],
-                    ignore: [],
-                    forced: ['html5shiv'],
-                    locate: namespaces
-                };
-
-                if (env.watch) {
-                    config.watch.js = {
-                        files: ['js/*.js'],
-                        tasks: ['auto_deps:' + name]
-                    };
-                }    
-                env.tasks.push('auto_deps:' + name);
-            }
-        }
-    
-    
         // css
         {
             grunt.loadNpmTasks('grunt-contrib-compass');
@@ -174,7 +113,7 @@ module.exports = function (grunt) {
                     files: ['test/*-test.js'],
                     tasks: ['mocha_phantomjs']
                 };
-                config.watch.js.tasks.push('mocha_html');
+                // config.watch.js.tasks.push('mocha_html');
             }
     
             config.mocha_phantomjs =  {
@@ -203,10 +142,10 @@ module.exports = function (grunt) {
         grunt.registerTask(name, env.tasks);
     };
 
-    configureEnv('dev', {
+    configureEnv('example', {
         tasks: [],
-        sitePath: '../',
-        httpPath: '/',
+        sitePath: '../example',
+        httpPath: '/example/',
         watch: true,
         ejs: true,
         test: true,
@@ -215,5 +154,5 @@ module.exports = function (grunt) {
 
     // init
     grunt.initConfig(config);
-    grunt.registerTask('default', ['dev']);
+    grunt.registerTask('default', ['example']);
 };
